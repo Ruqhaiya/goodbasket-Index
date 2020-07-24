@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMM! </title>
+    <script src="https://kit.fontawesome.com/fdd9920942.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <!-- Prev NAVBAR -->
+    <!--nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <img src="logo.png" alt="website logo"/>
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+        
+    </!--nav-->
+<!-- NAVBAR END-->
+    
+    <!--New Nav-->
+        <div class="navbar-center">
+        <!-- bar button -->
+        <div class="btn-group dropright ">
+            <span class="nav-icon"><button type="button" class=" dropdown-toggle btn-lg banner-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i>
+            </button>
+            <div class=" dropdown-menu banner-btn dropdow">
+
+              <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+              <a class=" btn dropdown-item banner-btn" aria-haspopup="true" aria-expanded="false" href="#">Home</a>
+              <a class=" btn dropdown-item banner-btn" href="#about">About Us</a>
+            <!-- categories -->
+                <button type="button" class="dropdown-toggle dropright dropdown-item banner-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CATEGORIES</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#veg">VEGETABLES</a>
+                      <a class="dropdown-item" href="#fru">FRUITS</a>
+                      <a class="dropdown-item" href="#pul">PULSES</a>
+                    </div>
+                <a class="dropdown-item" href="#">Contact Us</a>
+                </div>
+        </span>
+    </div>
+    <img style="width: 150px; height: 80px; padding-top:10px; scroll-padding-left: 10px; padding-bottom: 10px;" src="logo2.png" alt="website logo"/>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                <i class="fas fa-cart-plus"></i>
+            </span>
+            <div class="cart-items">0</div>
+        </div>
+        </div>
+  
+    <!-- New Nav-->
+
+    <!-- BEECH -->
+    <header class="beech">
+        <div class="banner">
+            <h5 class="banner-title">All the groceries you need!</h5>
+            <button class="banner-btn">Shop now</button>
+        </div>
+    </header>
+    <!-- BEECH END -->
+
+    <!-- New about-->
+   
+        <div class="section-title products" id="about">
+            <h2>ABOUT</h2>   
+            <div class="container">
+                <img class="about-image" src="download.jpg"/>
+                    <p class="about-para">Bringing to you premium quality fresh produce, daily pantry needs and healthy assortments under one roof.
+                    </p>
+            </div>
+            </div>
+        </div>
+
+    <!--end of about-->
+
+    <!-- products:-->
+    <section class="products" id="veg">
+        <div class="section-title">
+            <h2>VEGETABLES</h2>
+        </div>
+        <div class="products-center">
+            <!--single prod-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="./images/tomatoes.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="1">
+                        <i class="fas fa-shopping-cart">
+                        </i>
+                        Add to bag
+                    </button>
+                </div>
+                <h3>Tomatoes</h3>
+                <h4>$3/Kg</h4>
+            </article>
+            <!--end of single prod-->
+        </div>
+    </section>
+    <!--end of products-->
+
+     <!-- new products:-->
+     <section class="products" id="fru">
+        <div class="section-title">
+            <h2>FRUITS</h2>
+        </div>
+        <div class="products-center">
+        </div>
+    </section>
+    <!--end of products-->
+
+    <!-- new products:-->
+    <section class="products" id="pul">
+        <div class="section-title">
+            <h2>PULSES</h2>
+        </div>
+        <div class="products-center">
+        </div>
+    </section>
+    <!--end of products-->
+
+    <!-- cart-->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>Your cart</h2>
+            <div class="cart-content">
+            <!-- cart item-->
+            <!-- <div class="cart-item">
+                
+            </div> -->
+            <!-- end of cart item-->
+            </div>
+            <div class="cart-footer">
+                <h3>your total: $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- end of cart-->
+    <!-- contentful -->
+    <!--Add these bootstrap links-->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- ends here -->
+
+    <!--Ye bhi add karte to karo-->
+    <script src="app.js"></script>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+<!---End of page nos--->
+
+</body>
+</html>
+
+<!--Add these classes to css file
+
+.about-image{
+
+    position: right;
+    top: 0;
+    height: 300px;
+    width: 500px;
+    padding-left: 50px;
+}
+
+.about-para{
+    position: relative;
+    float: right;
+    font-display: var(--primaryColor);
+    padding-left:100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+}
+
+-->
